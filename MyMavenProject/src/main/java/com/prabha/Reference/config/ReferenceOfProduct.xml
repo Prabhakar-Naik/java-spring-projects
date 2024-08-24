@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans 
+  http://www.springframework.org/schema/beans/spring-beans.xsd 
+  http://www.springframework.org/schema/context/ 
+  http://www.springframework.org/schema/context/spring-context.xsd">
+  
+  
+<bean class="com.prabha.Reference.Customer" name="cust">
+
+<property name="CustomerName">
+<value>Prabhakar Naik</value>
+</property>
+
+<property name="MobileNo">
+<value>7095262400</value>
+</property>
+
+<property name="Gender">
+<value>Male</value>
+</property>
+<property name="Addr">
+<list>
+<value>Hyderabad</value>
+<value>Ananthapur</value>
+<value>Bengaluru</value>
+</list>
+</property>
+
+</bean>
+<bean class="com.prabha.Reference.Order" name="order">
+<property name="productId">
+<value>2345</value>
+</property>
+
+<property name="productName">
+<value>Laptop</value>
+</property>
+
+<property name="company">
+<value>Lenovo</value>
+</property>
+
+<property name="productCost">
+<value>540000</value>
+</property>
+<property name="customer">
+<ref bean="cust"></ref>
+</property>
+</bean>
+
+
+</beans>

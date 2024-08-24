@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans 
+  http://www.springframework.org/schema/beans/spring-beans.xsd 
+  http://www.springframework.org/schema/context/ 
+  http://www.springframework.org/schema/context/spring-context.xsd">
+  
+  
+<bean class="com.prabha.OrderDetails" name="id1">
+<property name="orderID" value="1435">
+</property>
+<property name="productName" value="Headphones">
+</property>
+<property name="orderPrice" value="50000"></property>
+
+</bean>
+<bean class="com.prabha.OrderDetails" name="id2">
+<property name="orderID" value="1657">
+</property>
+<property name="productName" value="PoccoMobile">
+</property>
+<property name="orderPrice" value="500000"></property>
+
+</bean>
+
+
+
+
+
+</beans>
